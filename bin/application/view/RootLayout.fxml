@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: #555; -fx-background-radius: 0;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.RootLayoutController">
+   <children>
+      <AnchorPane layoutX="15.0" layoutY="15.0" style="-fx-background-color: #777; -fx-background-radius: 10px;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <effect>
+            <DropShadow height="57.43" radius="19.1075" spread="0.04" />
+         </effect>
+         <children>
+            <Label fx:id="resultScreen" layoutX="85.0" layoutY="33.0" style="-fx-background-color: #fff; -fx-background-radius: 10px;" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+               <font>
+                  <Font size="39.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.43" height="30.11" radius="7.0275" width="0.0" />
+               </effect></Label>
+            <Button fx:id="zeroButton" layoutX="72.0" layoutY="412.0" mnemonicParsing="false" onAction="#zeroAction" prefHeight="44.0" prefWidth="58.0" text="0" AnchorPane.bottomAnchor="15.0">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            <Button fx:id="oneButton" layoutX="7.0" layoutY="359.0" mnemonicParsing="false" onAction="#oneButton" prefHeight="45.0" prefWidth="58.0" text="1">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            <Button fx:id="twoButton" layoutX="72.0" layoutY="359.0" mnemonicParsing="false" onAction="#twoAction" prefHeight="45.0" prefWidth="58.0" text="2">
+               <font>
+                  <Font size="24.0" />
+               </font></Button>
+            <Button fx:id="threeButton" layoutX="138.0" layoutY="359.0" mnemonicParsing="false" onAction="#threeAction" prefHeight="45.0" prefWidth="58.0" text="3">
+               <font>
+                  <Font size="23.0" />
+               </font></Button>
+            <Button fx:id="fourButton" layoutX="7.0" layoutY="307.0" mnemonicParsing="false" onAction="#fourAction" prefHeight="45.0" prefWidth="58.0" text="4">
+               <font>
+                  <Font size="24.0" />
+               </font></Button>
+            <Button fx:id="fiveButton" layoutX="72.0" layoutY="307.0" mnemonicParsing="false" onAction="#fiveAction" prefHeight="45.0" prefWidth="58.0" text="5">
+               <font>
+                  <Font size="23.0" />
+               </font></Button>
+            <Button fx:id="sixButton" layoutX="138.0" layoutY="307.0" mnemonicParsing="false" onAction="#sixAction" prefHeight="45.0" prefWidth="58.0" text="6">
+               <font>
+                  <Font size="23.0" />
+               </font></Button>
+            <Button fx:id="sevenButton" layoutX="8.0" layoutY="255.0" mnemonicParsing="false" onAction="#sevenAction" prefHeight="45.0" prefWidth="58.0" text="7">
+               <font>
+                  <Font size="23.0" />
+               </font></Button>
+            <Button fx:id="eightButton" layoutX="72.0" layoutY="255.0" mnemonicParsing="false" onAction="#eightAction" prefHeight="45.0" prefWidth="58.0" text="8">
+               <font>
+                  <Font size="23.0" />
+               </font></Button>
+            <Button fx:id="nineButton" layoutX="138.0" layoutY="255.0" mnemonicParsing="false" onAction="#nineAction" prefHeight="45.0" prefWidth="58.0" text="9">
+               <font>
+                  <Font size="23.0" />
+               </font></Button>
+            <Button fx:id="plusButton" layoutX="205.0" layoutY="359.0" mnemonicParsing="false" onAction="#plusAction" prefHeight="45.0" prefWidth="58.0" text="+">
+               <font>
+                  <Font size="23.0" />
+               </font></Button>
+            <Button fx:id="minusButton" layoutX="205.0" layoutY="307.0" mnemonicParsing="false" onAction="#minusAction" prefHeight="45.0" prefWidth="58.0" text="-">
+               <font>
+                  <Font size="23.0" />
+               </font></Button>
+            <Button fx:id="multButton" layoutX="205.0" layoutY="255.0" mnemonicParsing="false" onAction="#multAction" prefHeight="45.0" prefWidth="58.0" text="*">
+               <font>
+                  <Font size="23.0" />
+               </font></Button>
+            <Button fx:id="divButton" layoutX="205.0" layoutY="204.0" mnemonicParsing="false" onAction="#divAction" prefHeight="45.0" prefWidth="58.0" text="/">
+               <font>
+                  <Font size="23.0" />
+               </font></Button>
+            <Button fx:id="equalButton" layoutX="218.0" layoutY="412.0" mnemonicParsing="false" onAction="#equalAction" prefHeight="44.0" prefWidth="58.0" text="=" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="7.0">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            <Button fx:id="clearButton" layoutX="138.0" layoutY="204.0" mnemonicParsing="false" onAction="#clearAction" prefHeight="45.0" prefWidth="58.0" text="C">
+               <font>
+                  <Font size="23.0" />
+               </font></Button>
+            <Button fx:id="dotButton" layoutX="138.0" layoutY="412.0" mnemonicParsing="false" onAction="#dotAction" prefHeight="44.0" prefWidth="58.0" text="." AnchorPane.bottomAnchor="15.0">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            <Button fx:id="eraseButton" layoutY="412.0" mnemonicParsing="false" onAction="#eraseAction" prefHeight="44.0" prefWidth="58.0" text="&lt;&lt;" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="7.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="partialScreen" layoutX="120.0" layoutY="138.0" prefHeight="46.0" prefWidth="260.0" style="-fx-background-color: #fff; -fx-background-radius: 10px;" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+               <font>
+                  <Font size="39.0" />
+               </font>
+               <effect>
+                  <InnerShadow blurType="GAUSSIAN" choke="0.52" height="27.19" radius="6.2975" width="0.0" />
+               </effect>
+            </Label>
+            <Button fx:id="exitButton" layoutX="8.0" layoutY="205.0" mnemonicParsing="false" onAction="#exitAction" prefHeight="44.0" prefWidth="123.0" text="Sair">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
